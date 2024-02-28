@@ -1,0 +1,5 @@
+1.若安装opencv-python中，未提示函数，即函数标黄
+
+在opencv的安装路径：我的安装路径是D:\software\python3.8.10\Lib\site-packages\cv2
+在这目录下有一个文件cv2.pyd，把这个文件拷贝一份，放在上级目录site-packages下。然后就可以正确看到opencv库的函数提示了
+

@@ -1,0 +1,19 @@
+# 测试图片
+# 污垢图片 dirt
+img_dirt = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\dirt\64388mm\left_back-2022-12-14-07-25-33-64388mm-65740mm.jpeg
+img_dirt = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\dirt\64388mm\right_back-2022-12-14-07-25-33-64388mm-65740mm.jpeg
+
+# 划痕图片 scratch
+img_scratch = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\scratch\109879mm\left_back-2022-12-14-07-29-20-109879mm-64607mm.jpeg
+img_scratch = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\scratch\109879mm\left_back-2022-12-14-07-30-57-129169mm-63921mm.jpeg
+
+# 正常图片 normal
+img_normal = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\dirt\64388mm\left_front-2022-12-14-07-25-33-64388mm-65740mm.jpeg
+img_normal = D:\WorkDirectory\school_project\dragline_detection\stay_cable_photo\J16\dirt\94618mm\right_front-2022-12-14-07-28-04-94618mm-65191mm.jpeg
+
+
+
+
+# 训练数据集
+data_path = 'D:\WorkDirectory\school_project\dragline_detection\pre_data'
+class_name = ['dirt', 'normal', 'scratch']
