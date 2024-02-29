@@ -68,21 +68,21 @@ def brightness_trans_process(img, brightness_gain=50, direction="up",show=True):
     return img_light_trans
 
 def main():
-    # image = cv2.imread("data/367_14.png")
-    image = cv2.imread("data/377_3.png")
-    image_h, image_w = image.shape[:2]
-    print(image_h, image_w)
-    image_left = image[:, 0:image_w//2]
-    cv2.imshow("left", image_left)
+    folder_path = "data/"
 
-    masaic_process(image_left)
-    gaussian_process(image_left, 5, 19, True)
-    gaussian_noise_process(image_left, 0, 100, True)
-    brightness_trans_process(image_left, 50, "down", True)
-    brightness_trans_process(image_left, 50, "up", True)
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".png"):
+            image = cv2.imread(os.path.join(folder_path, filename))
+            image_h, image_w = image.shape[:2]
+            print(image_h, image_w)
+            image_left = image[:, 0:image_w//2]
+            cv2.imshow("left", image_left)
 
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+            masaic_process(image_left)
+            gaussian_process(image_left, 5, 19, True)
+            gaussian_noise_process(image_left, 0, 100, True)
+            brightness_trans_process(image_left, 50, "down", True)
+            brightness_trans_process(image_left, 50, "up", True)
 
 
     return 0
